@@ -23,6 +23,7 @@ return new class extends Migration
             $table->text('content');
             $table->text('author')->nullable();
             $table->unsignedBigInteger('contact_id')->nullable();
+            $table->softDeletes();
         });
     }
 

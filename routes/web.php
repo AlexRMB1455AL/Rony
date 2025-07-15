@@ -31,3 +31,8 @@ Route::get('/trust', [\App\Http\Controllers\PostController::class, 'index']);
 //    return view('welcome');
 //});
 Route::get('/home/home2_index', [\App\Http\Controllers\MyPlaceController::class, 'index']);
+Route::get('/rony/create', [\App\Http\Controllers\PostController::class, 'create']);
+Route::get('rony/update', [\App\Http\Controllers\PostController::class, 'update']);
+Route::get('rony/delete', [\App\Http\Controllers\PostController::class, 'delete']);
+Route::get('rony/firstOrCreate', [\App\Http\Controllers\PostController::class, 'firstOrCreate']);
+Route::get('rony/updateOrCreate', [\App\Http\Controllers\PostController::class, 'updateOrCreate']);
